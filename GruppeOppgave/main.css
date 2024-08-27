@@ -1,0 +1,110 @@
+
+:root {
+  
+  --MenyFontSize:1rem;
+  --MenyFontweight:600;
+  --MenyFontColor: white;
+  --MenyFooter: #9de7a3;
+  --MenyButtons: #6bbd72;
+  --MenyButtonsBackgroundHover:var(--MenyFooter);
+  --MenyButtonsBorderHover:white;
+  
+}
+
+/********* Hele siden ********/
+
+.pageContainer{
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+
+/*************øverste del: logo og meny*************/
+.uppermost{
+  background-color: var(--MenyFooter);
+  
+}
+
+/*************logo***********/
+.logoContainer{
+  border: 5px solid hsl(61, 88%, 52%);
+}
+
+/***************Meny*******************/
+.menuItemContainer {
+  margin:0;
+  list-style: none;
+  padding:1em 0 1em 0;
+  display: flex;
+  width:100%;
+  justify-content: end;
+}
+
+
+/***************Menyvalg*************/
+.items {
+    border: 2px solid var(--MenyFooter);
+    background-color: var(--MenyButtons);
+    padding:16px;
+    border-radius: 15px;
+    flex-basis: 5em;
+    text-align: center;
+}
+
+
+/* 
+*********Button down********
+background-color: var(----MenyButtonsBackgroundHover);
+
+*/
+
+.items:hover { border-color: var(--MenyButtonsBorderHover);}
+
+
+
+p.itemTxt{
+  font-weight: var(--MenyFontweight);
+  font-size: var(--MenyFontSize);
+  margin:0;
+  color: var(--MenyFontColor);
+}
+
+/**********Hoveddel****************/
+.main{
+  height: 100rem;
+}
+
+.tablesContainer {
+  padding-top: 0em;
+  height: 100%;
+  }
+
+.table{
+  margin-top: 10em;
+  height: 30em;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  border: 5px solid hsl(253, 78%, 39%);
+}
+
+.tableForm{
+  border: 5px solid hsl(253, 78%, 39%);
+}
+
+
+
+
+/************Footer**********/
+.footer{
+  background-color: var(--MenyFooter);
+  display:flex;
+  justify-content: space-around;
+  padding: 10rem 0 10rem 0;
+}
+
+.footerContent{
+  border: 5px solid hsl(120, 78%, 39%);
+  height:10rem;
+  width:10rem;
+}
